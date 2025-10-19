@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset= "UTF-8"><!--Permite caracteres especiales ñ y tildes-->
+	<meta charset="16"><!-- Lenguajes de escritura de derecha a izquierda-->
+	<meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+	
+	<meta name= "keywords" content ="HTML, CSS, JavaScript">
+	
+	<meta http-equiv= "refresh" content ="10">
+	
+	<title>Practica Imagen</title>
+	<link rel="icon" href="../img/Tentacruel.ico"><!--Error mas comun es la ruta-->
+</head>
+
+<body>
+<h1>Imagenes en HTML</h1>
+<p>Insercion de imagen mediante el elemento img, con el recurso que apunta a la ruta de esta</p>
+<img src="../img/mapache.jpg" 
+width="400"
+height="341"
+/>
+
+<h2>Imagenes con URL absoluta</h2>
+<p>Insercion de imagen URL, lo cual no tiene sentido debido a que hace que el navegador trabaje mas buscando la direccion IP, pero para fines educativos se presentara a continuacion</p>
+<img src="https://images.pexels.com/photos/54602/raccoon-bear-zoo-saeugentier-54602.jpeg"
+width="400"
+height="341"
+/>
+
+
+<h2>Imagenes con texto alternativo</h2>
+<p>Imagen se presentara con un texto en situaciones en las que no pueda ser presentada, para poder representarlo, se escribira de forma erronea la direccion de la imagen, lo que generara que el texto alternativo se muestre</p>
+<img src="../img/mapacho.jpg" alt= "mapache comiendo bolitas de queso"
+width="400"
+height="341"
+/>
+
+<h2>Anchura y altura de las imagenes</h2>
+<p>Se puede hacer uso de los atributos width y height para especificar el alto y ancho de una imagen. 
+Se ajustaron las imagenes anteriores para que tengan un tamaño similar</p>
+
+<h2>Titulos</h2>
+<p>se puede añadir el atributo title a las imagenes para proporcinar informacion de ayuda</p>
+<img src="../img/mapache.jpg" 
+width="400"
+height="341"
+title="Mapache comiendo"
+/>
+
+<h2>Pie de imagen</h2>
+
+<p>Uso de elementos figure y figcaption para vincular una imagen con su pie</p>
+<figure>
+<img src="../img/mapache.jpg" 
+width="400"
+height="341"
+title="Mapache comiendo"
+
+/>
+<figcaption>
+    Pie de imagen de mapache comiendo bolitas de queso
+  </figcaption>
+
+</figure>
+
+
+</body>

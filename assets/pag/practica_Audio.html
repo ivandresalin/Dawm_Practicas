@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset= "UTF-8"><!--Permite caracteres especiales ñ y tildes-->
+	<meta charset="16"><!-- Lenguajes de escritura de derecha a izquierda-->
+	<meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+	
+	<meta name= "keywords" content ="HTML, CSS, JavaScript">
+	
+	
+	<title>Practica Audio</title>
+	<link rel="icon" href="../img/Zubat.ico"><!--Error mas comun es la ruta-->
+</head>
+
+<body>
+	<h1>Audio</h1>
+	<p>Reproductor sencillo de audio</p>
+	<audio src= "../aud/sonido1.mp3" controls> 
+	</audio>
+	
+	<h1>Atributos de audio permitidos</h1>
+		<h2>Loop</h2>
+			<p>El audio se repite al terminar la reproduccion</p>
+			<audio src="../aud/sonido1.mp3" loop controls>
+			</audio>
+			
+		<h2>Muted</h2>
+			<p>El audio se encuentra en estado silenciado por defecto</p>
+			<audio src="../aud/sonido1.mp3" muted controls>
+			</audio>	
+			
+		<h2>Controls</h2>
+			<p>Se muestran los controles de reproduccion, que por defecto no se muestran</p>
+			<audio src="../aud/sonido1.mp3" controls>
+			</audio>
+
+		<h2>Autoplay</h2>
+			<p>Se reproduce el audio al cargar la pagina </p>
+			<audio src="../aud/sonido2.mp3" autoplay controls>
+			</audio>
+			
+		<h2>Precarga de audio</h2>
+			<p>El archivo de audio comenzara a descargarse una vez que el usuario le de clic a play </p>
+			<p>Los valores por que puede tomar preload son :</p>
+			<ul>
+				<li>auto</li>
+				<li>none</li>
+				<li>metadata</li>
+			</ul>
+			<audio src="../aud/sonido1.mp3" controls preload="none">
+			</audio>
+			
+		<h2>Audio con fallbacks o extras</h2>
+			<p>Etiqueta de audio puede actuar como etiqueta contenedora para tener mayor compatibilidad, o capacidades adicionales </p>
+			<audio controls>
+				<source src="../aud/sonido1.mp3" >
+				<source src="../aud/sonido2.mp3" >
+			</audio>
+
+</body>
